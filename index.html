@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-item">
+            <button id="toggle-dark-mode">🌙 Dark Mode</button>
+        </div>
+        <div class="nav-item">
+            <select id="font-style">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Lucida Sans">Lucida Sans</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Garamond">Garamond</option>
+            </select>
+        </div>
+        <div class="nav-item">
+            <input type="range" id="font-size" min="12" max="30" value="16">
+        </div>
+        <div class="nav-item">
+            <button id="bg-color-btn">🎨 Change Background Color</button>
+            <input type="color" id="bg-color" value="#ffffff" style="display: none;">
+        </div>
+    </nav>
+    <main>
+        <div class="todo-header">
+            <h1>To-Do List</h1>
+            <p>Stay organized and productive with your tasks</p>
+        </div>
+        <div class="todo-container">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-btn">Add</button>
+            <ul id="todo-list"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
